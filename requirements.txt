@@ -1,0 +1,7 @@
+tensorflow>=2.15,<2.17
+mtcnn>=0.1.1
+opencv-python>=4.8,<5.0
+numpy>=1.24,<2.0
+pillow>=10.0
+matplotlib>=3.10
+scipy>=1.10,<2.0

@@ -1,0 +1,4 @@
+*.h5
+database/
+__pycache__/
+test/
