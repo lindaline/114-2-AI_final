@@ -14,11 +14,6 @@ from tensorflow.keras import optimizers,regularizers
 from matplotlib import image, pyplot as plt
 
 model_name = 'resnet18'
-folder_path = 'database/train'
-cls_list = []
-
-for folder in os.listdir(folder_path):
-    cls_list.append(folder)
 
 def block(x,out_filters,k_size=(3,3),downsample=0):
   if(downsample==1):
@@ -130,5 +125,3 @@ def train(num_class):
   model.save(weights_final)
 
   show_history(history)
-
-train(num_class=len(cls_list))
