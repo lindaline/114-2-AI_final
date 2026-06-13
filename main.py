@@ -6,6 +6,8 @@ import enroll_face
 
 folder_path = 'database/train'
 cls_list = []
+for folder in os.listdir(folder_path):
+        cls_list.append(folder)
 
 root = tk.Tk()
 root.title('臉部辨識解鎖系統')
@@ -24,6 +26,7 @@ def open_enroll_face(name):
 
 def open_train():
     train.train(num_class=len(cls_list))
+    root.destroy()
 
 def open_test(name):
     done = test.detection(name)
